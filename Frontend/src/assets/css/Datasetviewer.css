@@ -1,0 +1,35 @@
+#data-viewer-container{
+  margin-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 1px solid #ddd;
+
+}
+
+.list-group-item {
+  border-top: none;
+  border-bottom:1px solid #ddd;
+  background-color: transparent;
+}
+
+.event-item{
+  border: none;
+
+}
+
+#filter-menu label{
+  margin-left: 5px;
+}
+
+#data-viewer-container {
+
+}
+#filter-menu {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.my-btn {
+  float:right;
+  margin-left: 5px;
+}

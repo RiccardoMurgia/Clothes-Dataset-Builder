@@ -1,0 +1,79 @@
+input[readonly].email_form {
+  background-color: transparent;
+  border: 0;
+  font-size: 1em;
+}
+
+.info-form {
+  padding-top: 200px;
+  padding-bottom: 25px;
+
+}
+
+.key-form {
+  padding-top: 50px;
+  border-top: solid 1px #ccc;
+}
+
+#save-btn-row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: right;
+}
+
+.my-disabled {
+  background-color: #e6e6e6;
+}
+
+#key-form-message-box {
+  color: red;
+  min-height: 20px;
+}
+
+#change-pswd-btn {
+  color: darkblue;
+}
+
+.fa-trash {
+  color: black;
+}
+
+#google-form > div:nth-child(4) > button:nth-child(2) {
+  margin-left: 10px;
+}
+
+#flickr-form > div:nth-child(4) > button:nth-child(2) {
+  margin-left: 10px;
+}
+
+#google-form > div:nth-child(2) {
+  padding-top: 5px;
+}
+
+#google-form > div:nth-child(3) {
+  padding-top: 5px;
+}
+
+#google-form > div:nth-child(4) {
+  padding-top: 5px;
+}
+
+#flickr-form > div:nth-child(2) {
+  margin-top: 5px;
+}
+
+#flickr-form > div:nth-child(3) {
+  padding-top: 5px;
+}
+
+#flickr-form > div:nth-child(4) {
+  padding-top: 5px;
+}
+
+
+
+
+
+
+
+

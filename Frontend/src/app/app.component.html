@@ -1,0 +1,75 @@
+<router-outlet></router-outlet>
+<div class="modal fade" id="build-your-dataset-menu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="exampleModalLabel">Set the name of your Dataset</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Name:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="MyDataset">
+          </div>
+
+        </form>
+
+        <div class="progress hidden" id="progress_bar">
+          <div class="progress__fill" id="fill_percentage"></div>
+          <span class="progress__text" id="progress_percentage">0%</span>
+        </div>
+        <div class="hidden" id="message_box">
+          <span id="message"> </span>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="close_detection_modal()"
+                id="close_modal_btn">Close
+        </button>
+        <button type="button" class="btn btn-primary" onclick="clothes_detection()" id="build_your_dataset_btn">
+          Build yuor Dataset
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="search-option-menu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Search options</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div  class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="related-search" onclick="deactivate_related_search()" checked >
+            <label class="form-check-label" for="related-search">
+              Related search
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="inputNumber" class="input-number-label">Insert the number of images to search:  </label>
+          <span class="input-number">
+                                <input type="number" id="inputNumber" name="inputNumber" value="100">
+                        </span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+        </button>
+        <button type="button" class="btn btn-primary" onclick="save_search_options()">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

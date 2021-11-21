@@ -1,0 +1,118 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.gallery li figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: default;
+
+}
+
+/* Filter effect */
+.gallery.filter img {
+    transition: filter .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+/* Caption 3 */
+.gallery.caption-3 li figure {
+    overflow: hidden;
+}
+
+.gallery.caption-3 li img {
+    transform: scale(1.2);
+    transition: transform .3s ease-in-out;
+}
+
+.gallery.caption-3 figure figcaption {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transform: scale(1.2);
+    transotion: all .3s ease-in-out;
+    pointer-event: none;
+}
+
+.gallery.caption-3 figure:hover img {
+    filter: grayscale(100%);
+    transform: scale(1);
+    opacity: 0.6;
+}
+
+.gallery.caption-3 figure:hover .delete-btn {
+    opacity: 1;
+}
+
+.gallery.caption-3 figure:hover figcaption {
+    transform: scale(1);
+}
+
+.gallery.caption-3 {
+    padding-top: 30px;
+}
+
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.delete-btn  {
+    transition: .5s ease;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #222;
+}
+
+.delete-btn:hover {
+    opacity: 1;
+}
+
+.figure:hover .img {
+    opacity: 0.3;
+}
+
+.gallery .fa{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+

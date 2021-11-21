@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/css/Global.css";
+@import "assets/css/Home.css";
+@import "assets/css/SearchBar.css";
+@import "assets/css/Gallery.css";
+@import "assets/css/Spinner.css";
+@import "assets/css/ProgressBar.css";
+@import "assets/css/Account.css";
+@import "assets/css/Datasetviewer.css";
+
